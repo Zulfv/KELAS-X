@@ -1,0 +1,341 @@
+/* Mengatur font untuk seluruh halaman */
+body {
+    background-color: #5765a2;
+    font-family: 'Press Start 2P', cursive; /* Menggunakan font Pixel */
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Menyelaraskan elemen secara vertikal */
+    background-color: #5765a2;
+    padding: 20px 20px; /* Menambahkan padding vertikal untuk memberi ruang lebih */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Menyelaraskan elemen secara vertikal */
+    padding-left: 30px; /* Menambahkan padding kiri untuk menggeser konten ke kanan */
+}
+
+.header h1 {
+    margin: 0; /* Menghapus margin default */
+    font-size: 30px; /* Ukuran font untuk judul */
+    margin-right: 20px; /* Menambahkan jarak antara judul dan tautan */
+}
+.header-links {
+    display: flex;
+    align-items: center;
+}
+
+.header-links a {
+    margin: 0 15px; /* Jarak antar tautan */
+    font-size: 5px; 
+}
+ 
+@keyframes jumpRocket {
+    0% {
+        transform: translateY(0); /* Posisi awal */
+    }
+    50% {
+        transform: translateY(-20px); /* Geser ke atas */
+    }
+    100% {
+        transform: translateY(0); /* Kembali ke posisi awal */
+    }
+}
+
+.rocket-icon {
+    width: 50px; /* Ukuran gambar roket */
+    height: auto; /* Menjaga proporsi gambar */
+    margin-right: 15px; /* Jarak antara gambar roket dan teks */
+    vertical-align: middle; /* Menyelaraskan gambar dengan teks */
+    animation: jumpRocket 5s infinite; /* Menambahkan animasi */
+}
+
+
+.search-form {
+    display: flex;
+    margin: 0 20px; /* Jarak antar elemen pencarian */
+}
+
+.search-form input {
+    width: 300PX; /* Memperpanjang kolom pencarian */
+    padding: 5px;
+}
+
+.search-form button {
+    padding: 5px 10px; /* Ukuran tombol pencarian */
+}
+
+/* Gaya untuk Banner */
+
+.banner {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    display: none; /* Sembunyikan semua gambar secara default */
+}
+
+.banner img.active {
+    display: block; /* Tampilkan gambar yang aktif */
+}
+
+.banner-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.banner-controls button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.categories {
+    margin:  0; /* Jarak atas dan bawah untuk kategori */
+    text-align: center; /* Menyelaraskan teks di tengah */
+    
+
+}
+.category-title {
+    font-size: 20px; /* Sesuaikan ukuran font */
+    text-align: center; /* Pastikan berada di tengah */
+    color: 5765a2; /* Sesuaikan warna jika perlu */
+    margin-bottom: 5px; /* Tambahkan jarak agar tidak terlalu dekat dengan kategori */
+}
+
+
+.categories h2 {
+    margin-bottom: 5px; /* Jarak antara judul dan daftar kategori */
+}
+.categories li {
+    display: inline-block; /* Menampilkan kategori dalam baris */
+    margin: 20px; /* Jarak antar kategori */
+    text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+.categories a {
+    text-decoration: none; /* Menghapus garis bawah pada tautan */
+    color: inherit; /* Menggunakan warna teks yang sama */
+}
+
+.categories .category-name {
+    font-size: 14px; /* Ukuran font untuk nama kategori */
+    margin-top: 10px; /* Jarak antara gambar dan nama kategori */
+}
+.category-image {
+    width: 100px; /* Ukuran gambar kategori */
+    height: 100px; /* Ukuran gambar kategori */
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    color: aliceblue;
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #5765a2;
+    color: #222;
+    text-align: center;
+}
+
+.space-header {
+    background: linear-gradient(to right, #0d47a1, #42a5f5);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.space-header .title {
+    font-size: 24px;
+}
+
+.header-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.header-links a:hover {
+    color: #ffeb3b;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+ 
+.about-content {
+    background: rgb(222, 218, 218);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+}
+
+.about-content h2, .about-content h3 {
+    color: #0d47a1;
+}
+
+.space-footer {
+    background: #0d47a1;
+    color: rgb(124, 33, 33);
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Gaya untuk Produk */
+/* Gaya untuk Produk */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Memberi jarak antar produk */
+    justify-content: flex-start; /* Menyusun ke kiri */
+    align-items: flex-start; /* Menyusun produk ke atas */
+    padding: 20px;
+}
+
+
+.product-card {
+    background-color: #222;
+    border: 2px solid #fff;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+    display: inline-block; /* Memastikan produk tetap dalam satu baris */
+}
+
+.product-card:hover {
+    transform: scale(1.1);
+}
+
+.product-image {
+    max-width: 200px;
+    height: auto;
+    display: block;
+}
+
+
+.product-name {
+    color: #ffeb3b;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.product-price {
+    color: #ff9800;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.buy-button {
+    background-color: #42a5f5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 14px;
+}
+
+.buy-button:hover {
+    background-color: #0d47a1;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background: #000016;
+    padding: 30px 10px;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    flex-wrap: wrap;
+    border-top: 3px solid #00f0ff;
+  }
+  
+  .footer-section {
+    padding: 10px;
+  }
+  
+  
+  .footer-section h3 {
+    color: #ffeb3b;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    font-size: 10px;
+  }
+  
+  .footer-section .footer-social a {
+    margin-bottom: 6px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 10px;
+  }
+  
+  .footer-bottom {
+    background: #00000a;
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+    color: #aaa;
+    border-top: 1px solid #333;
+  }
+
+
+  .footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  
+  .social-item {
+    display: flex;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive; /* jika kamu pakai font pixel */
+    font-size: 10px;
+  }
+  
+  .social-item span {
+    margin-right: 8px;
+    font-size: 14px;
+    width: 20px;
+    text-align: center;
+  }
+  
+  .social-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+  }
+  
+  .social-item a:hover {
+    color: yellow;
+    text-decoration: underline;
+  }
+  
